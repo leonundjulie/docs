@@ -1511,6 +1511,21 @@ You need to ask your provider.
     #
     ```
 
+	
+### Iskra MT 631 (SML)
+
+    ```
+    >D
+    >B
+    ->sensor53 r
+    >M 1
+    +1,3,s,16,9600,MT631
+    1,77070100600100ff@#,Server ID,,server_id,0
+    1,77070100020800ff@1000,Export (Total),kWh,export_total_kwh,4
+    1,77070100010800ff@1000,Consumption (Total),kWh,total_kwh,4
+    1,77070100100700ff@1,Consumption (Current),W,curr_w,0
+    #
+    ```
 ### Iskra MT 681 (SML)
 
 This is script for a two-direction meter (consumption and delivery) for the Isra MT 681, that is widely used in Germany. If you don't deliver energy, just delete the "Total Delivered" line. If the meter provides the consumption values for the 3 phases depends also on the configuration by your local energy provider.
